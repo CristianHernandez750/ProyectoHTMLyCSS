@@ -1,0 +1,461 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    line-height: 1.6;
+}
+main{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif ;
+}
+
+.header{
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.header__title{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+.header__subtitle{
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    margin-top: 2px;
+    margin-bottom: 2rem;
+}
+
+.header__nav{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header__nav--blue{
+    padding-right: 5vw;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(53, 53, 255);
+    
+}
+
+.header__ancle{
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    padding-right: 5vw;
+}
+
+.header__ancle:hover{
+    color: rgb(68, 68, 255);
+}
+
+.section1{
+    background-color: aliceblue;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section1 h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 6rem;
+}
+
+.section1__me{
+    text-align: center;
+    color: rgb(98, 98, 255);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.section1__description{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.button{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.button--blue_background{
+    border: 1px solid rgb(71, 71, 252);
+    color: white;
+    background-color: rgb(71, 71, 252);
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid rgb(71, 71, 252);
+}
+.button--blue_background:hover{
+    background-color: rgb(52, 52, 175);
+    color: rgb(52, 52, 175);
+    border: 2px solid rgb(52, 52, 175);
+}
+
+.button--normal{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0;
+    border: 2px solid rgb(71, 71, 252);
+    color: rgb(71, 71, 252);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button--normal:hover{
+    background-color: rgba(190, 223, 255, 0.459);
+    color: rgb(27, 27, 182);
+}
+
+.numbers{
+    text-align: center;
+}
+
+.numbers__conteiner{
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+.numbers__conteiner__num{
+    font-size: 2rem;
+    color: rgb(71, 71, 252);
+    margin-bottom: 0.7rem;
+}
+
+.numbers__conteiner__subtitle{
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 3rem;
+}
+
+.about_me__1__title, .about_me__1__subtitle{
+    text-align: center;
+}
+
+.about_me__1__title{
+    font-size: 2rem;
+    margin-top: 8rem;
+}
+
+.about_me__1__subtitle{
+    font-size: 1.3rem;
+    margin: 1.5rem auto;
+    max-width: 800px;    
+}
+
+.about_me__1__paragraph{
+    max-width: 800px;
+    margin: auto;
+    color: gray;
+}
+
+.about_me__1__box{
+    background-color: rgb(236, 236, 236);
+    border-left: 3px solid rgb(71, 71, 252);
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    font-style: italic;
+}
+
+.box_1{
+    font-size: 1.2rem;
+}
+
+.box_1--right{
+    text-align: end;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+.about_me__2__title{
+    margin-bottom: 1.3rem;
+    text-align: center;
+}
+
+.about_me__2__box_paragraph{
+    background-color: rgb(243, 243, 243);
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1.5rem 1rem;
+    border: 1px solid rgb(206, 206, 206);
+    color: rgb(77, 77, 77);
+}
+
+.about_me__2__box_paragraph:hover{
+    background-color: rgb(226, 236, 255);
+    border: 1px solid rgb(0, 81, 255);
+}
+
+.block_conteiner{
+    margin-top: 5rem;
+    background-color: rgb(243, 243, 243);
+    max-width: 1280px;
+    padding-bottom: 5rem;
+}
+
+.conteiner__title, .conteiner__description{
+    text-align: center;
+}
+
+.conteiner__title{
+    padding-top: 6rem;
+    font-size: 2rem;
+}
+
+.conteiner__description {
+    color: rgb(65, 65, 65);
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.website_block{
+    margin-top: 2rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: white;
+    padding: 0 2rem;
+    border: 1px solid rgb(226, 226, 226);
+}
+.website_block:hover{
+    border-color: rgb(83, 83, 255);
+}
+.website_block__title{
+    padding-top: 4rem;
+}
+
+.website_block__description{
+    margin: 1rem 0;
+    color: rgb(65,65,65);
+}
+
+.list{
+    margin-top: 0.8rem;
+    color: rgb(65, 65, 65);
+    margin-left: 2rem;
+}
+
+.span_conteiner{
+    margin: 2rem 0;
+}
+
+.website__span{
+    background-color: rgb(185, 227, 255);
+    font-weight: bold;
+    color: rgb(1, 77, 128);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.button_conteiner{
+    margin-bottom: 2rem;
+}
+.website__button{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(83, 83, 206);
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+.website__button:hover{
+    text-decoration: underline;
+    color: rgb(52, 52, 129);
+}
+
+.personal_cv{
+    background-color: white;
+    margin-top: 2rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-top: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border: 2px solid rgb(52, 52, 253);
+}
+
+.personal_cv__outstanding{
+    background-color: rgb(52,52,253);
+    color: white;
+    padding: 0.3rem;
+}
+
+.my_habilities{
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding-right: 5vw;
+}
+
+.my_habilities__title, .my_habilities__description{
+    text-align: center;
+}
+
+.my_habilities__title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.my_habilities__description{
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.percentage__title{
+    margin-bottom: 1rem;
+}
+
+.boxes{
+    display: inline;
+    padding-top: 0.5rem;
+}
+
+.percentage_box1{
+    background-color: rgb(53, 53, 143);
+    padding-right: 75%;
+}
+.percentage_box2{
+    background-color: rgb(168, 168, 168);
+    padding-right: 25%;
+}
+
+.percentage_box3{
+    background-color: rgb(53, 53, 143);
+    padding-right: 60%;
+}
+.percentage_box4{
+    background-color: rgb(168, 168, 168);
+    padding-right: 40%;
+}
+.percentage_box5{
+    background-color: rgb(53, 53, 143);
+    padding-right: 20%;
+}
+.percentage_box6{
+    background-color: rgb(168, 168, 168);
+    padding-right: 80%;
+}
+
+.percentage{
+    font-size: 0.9rem;
+    color: rgb(75, 75, 75);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.actually_learning{
+    background-color: rgb(233, 233, 233);
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.social_media{
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.social_media__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social_media__description{
+    margin:0 auto;
+    margin-bottom: 5rem;
+    max-width: 600px;
+    color: rgb(65,65,65);
+}
+
+.media_conteiner{
+    display: inline-block;
+    margin-right: 4rem;
+}
+.media_conteiner__title{
+    margin-bottom: 1rem;
+}
+.media_conteiner__URL{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(0, 81, 255);
+}
+
+.media_conteiner__URL:hover{
+    text-decoration: underline;
+}
+.social_media__button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 81, 255);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.social_media__button:hover{
+    background-color: rgb(0, 59, 185);
+    color: rgb(0, 59, 185);
+}
+
+.footer{
+    background-color: black;
+}
+.footer__nav{
+    padding-top: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.footer_ancle{
+    color: white;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.footer_ancle:hover{
+    color: rgb(190, 205, 255);
+}
+
+.footer_description{
+    text-align: center;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.footer_final{
+    color: gray;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
