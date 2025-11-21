@@ -17,13 +17,18 @@ body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif ;
 }
 
+h1, h2{
+    font-family: 'Lilita One', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
 .header{
     border-bottom: 1px solid rgb(202, 202, 202);
 }
 
 .header__title{
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 3rem;
     margin-top: 1rem;
 }
 .header__subtitle{
@@ -50,28 +55,35 @@ body{
 .header__ancle{
     text-decoration: none;
     color: rgb(37, 37, 37);
-    padding-right: 5vw;
+    padding-right: 5vw; 
 }
 
 .header__ancle:hover{
     color: rgb(68, 68, 255);
+    text-shadow: 2px 2px 2px #888;
 }
 
 .section1{
-    background-color: aliceblue;
+    background: radial-gradient(circle,
+        #a681ff,
+        #0026ff
+    );
     max-width: 1280px;
     margin: 0 auto;
 }
 
 .section1 h1{
+    font-family: 'Lilita One', 'sans-serif';
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 300;
     padding-top: 6rem;
+    color: white;
 }
 
 .section1__me{
     text-align: center;
-    color: rgb(98, 98, 255);
+    color: rgb(255, 255, 255);
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 1.6rem;
@@ -84,7 +96,7 @@ body{
     margin-bottom: 2rem;
     max-width: 600px;
     font-size: 1.1rem;
-    color: gray;
+    color: white;
 }
 
 .button{
@@ -103,28 +115,34 @@ body{
     margin-right: 1rem;
     cursor: pointer;
     text-decoration: none;
-    border: 2px solid rgb(71, 71, 252);
+    border: 2px solid rgb(61, 61, 207);
+    border-radius: 1rem;
 }
 .button--blue_background:hover{
-    background-color: rgb(52, 52, 175);
-    color: rgb(52, 52, 175);
-    border: 2px solid rgb(52, 52, 175);
+    background-color: rgb(69, 69, 241);
+    color: rgb(220, 220, 223);
+    border: 2px solid rgb(31, 31, 221);
+    box-shadow: 2px 2px 10px blue;
 }
 
 .button--normal{
+    background-color: white;
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 0;
     border: 2px solid rgb(71, 71, 252);
-    color: rgb(71, 71, 252);
+    color: rgb(52, 52, 175);
     cursor: pointer;
     text-decoration: none;
+    border-radius: 1rem;
 }
 
 .button--normal:hover{
-    background-color: rgba(190, 223, 255, 0.459);
-    color: rgb(27, 27, 182);
+    background-color: rgb(199, 199, 255);
+    color: rgb(52, 52, 175);
+    border: 2px solid rgb(199, 199, 255);
+    box-shadow: 2px 2px 10px blue;
 }
 
 .numbers{
@@ -138,13 +156,13 @@ body{
 
 .numbers__conteiner__num{
     font-size: 2rem;
-    color: rgb(71, 71, 252);
+    color: white;
     margin-bottom: 0.7rem;
 }
 
 .numbers__conteiner__subtitle{
     font-size: 1rem;
-    color: gray;
+    color: white;
     margin-bottom: 3rem;
 }
 
@@ -153,7 +171,7 @@ body{
 }
 
 .about_me__1__title{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 8rem;
 }
 
@@ -170,42 +188,48 @@ body{
 }
 
 .about_me__1__box{
-    background-color: rgb(236, 236, 236);
+    background: linear-gradient(to right,
+    rgb(231, 244, 255),
+    rgb(223, 223, 223));
     border-left: 3px solid rgb(71, 71, 252);
     margin: 2rem auto;
     max-width: 800px;
     padding: 1rem;
-    font-style: italic;
 }
 
 .box_1{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    font-family: 'Great Vibes', 'Arial';
 }
 
 .box_1--right{
     text-align: end;
     font-size: 0.9rem;
     color: gray;
+    font-style: italic;
 }
 
 
 .about_me__2__title{
     margin-bottom: 1.3rem;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .about_me__2__box_paragraph{
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(141, 141, 141);
     max-width: 800px;
     margin: 1rem auto;
     padding: 1.5rem 1rem;
-    border: 1px solid rgb(206, 206, 206);
-    color: rgb(77, 77, 77);
+    border: 2px solid rgb(122, 122, 122);
+    color: white;
+    border-radius: 2rem;
 }
 
 .about_me__2__box_paragraph:hover{
-    background-color: rgb(226, 236, 255);
-    border: 1px solid rgb(0, 81, 255);
+    background-color: rgb(109, 109, 109);
+    border: 2px solid rgb(95, 95, 95);
+    box-shadow: 2px 2px 5px rgb(161, 161, 161);
 }
 
 .block_conteiner{
@@ -237,9 +261,10 @@ body{
     background-color: white;
     padding: 0 2rem;
     border: 1px solid rgb(226, 226, 226);
+    border-radius: 3rem;
 }
 .website_block:hover{
-    border-color: rgb(83, 83, 255);
+    box-shadow: 2px 2px 5px gray;
 }
 .website_block__title{
     padding-top: 4rem;
@@ -261,12 +286,16 @@ body{
 }
 
 .website__span{
-    background-color: rgb(185, 227, 255);
-    font-weight: bold;
-    color: rgb(1, 77, 128);
+    font-family: 'Lilita One', Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right,
+    #9C00FA,
+    #4A00FA);
+    font-weight: 200;
+    color: white;
     padding: 0.5rem;
     font-size: 0.9rem;
     margin-right: 0.5rem;
+    border-radius: 1rem;
 }
 
 .button_conteiner{
@@ -294,12 +323,16 @@ body{
     padding-right: 2rem;
     padding-left: 2rem;
     border: 2px solid rgb(52, 52, 253);
+    border-radius: 3rem;
 }
 
 .personal_cv__outstanding{
-    background-color: rgb(52,52,253);
+    background: linear-gradient(to right,
+    #ED2AF7,
+    #FA0800);
     color: white;
-    padding: 0.3rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
 }
 
 .my_habilities{
@@ -377,22 +410,26 @@ body{
 
 .social_media{
     text-align: center;
-    background-color: aliceblue;
+    background: radial-gradient(circle,
+    rgb(136, 136, 255),
+    blue);
     margin-top: 3rem;
     padding-top: 5rem;
     padding-bottom: 4rem;
+    border-radius: 3rem 3rem 0 0;
 }
 
 .social_media__title{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .social_media__description{
     margin:0 auto;
     margin-bottom: 5rem;
     max-width: 600px;
-    color: rgb(65,65,65);
+    color: white;
 }
 
 .media_conteiner{
@@ -401,11 +438,12 @@ body{
 }
 .media_conteiner__title{
     margin-bottom: 1rem;
+    color: white;
 }
 .media_conteiner__URL{
     text-decoration: none;
     font-weight: bold;
-    color:rgb(0, 81, 255);
+    color:white;
 }
 
 .media_conteiner__URL:hover{
@@ -419,14 +457,19 @@ body{
     border: none;
     cursor: pointer;
     color: white;
-    background-color: rgb(0, 81, 255);
+    background: linear-gradient(to right,
+        red,
+        rgb(195, 0, 255)
+    );
+    border-radius: 1rem;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 .social_media__button:hover{
-    background-color: rgb(0, 59, 185);
-    color: rgb(0, 59, 185);
+    
+    box-shadow: 2px 2px 5px red;
+    color: white;
 }
 
 .footer{
