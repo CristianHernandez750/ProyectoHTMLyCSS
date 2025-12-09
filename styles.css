@@ -30,13 +30,13 @@ h1, h2{
 }
 
 .header__title{
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     margin-top: 1rem;
     text-align: center;
 }
 .header__subtitle{
     text-align: center;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     color: gray;
     margin-top: 2px;
     margin-bottom: 2rem;
@@ -79,7 +79,7 @@ h1, h2{
 .section1 h1{
     font-family: 'Lilita One', 'sans-serif';
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 300;
     padding-top: 6rem;
     color: white;
@@ -90,7 +90,7 @@ h1, h2{
     color: rgb(255, 255, 255);
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 2vw, 1.6rem);;
 }
 
 .section1__description{
@@ -99,7 +99,7 @@ h1, h2{
     margin-right: auto;
     margin-bottom: 2rem;
     max-width: 600px;
-    font-size: 1.1rem;
+    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
     color: white;
 }
 
@@ -113,9 +113,10 @@ h1, h2{
     color: white;
     background-color: rgb(71, 71, 252);
     border-radius: 0;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
     font-weight: bold;
-    padding: 1rem;
+    padding: 1vw;
+    min-width: 44px;
     margin-right: 1rem;
     cursor: pointer;
     text-decoration: none;
@@ -131,8 +132,9 @@ h1, h2{
 
 .button--normal{
     background-color: white;
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 1vw;
+    min-width: 44px;
+    font-size: clamp(0.8rem, 1vw, 1rem);
     font-weight: bold;
     border-radius: 0;
     border: 2px solid rgb(71, 71, 252);
@@ -151,6 +153,8 @@ h1, h2{
 
 .numbers{
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .numbers__conteiner{
@@ -159,13 +163,13 @@ h1, h2{
 }
 
 .numbers__conteiner__num{
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
     color: white;
     margin-bottom: 0.7rem;
 }
 
 .numbers__conteiner__subtitle{
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
     color: white;
     margin-bottom: 3rem;
 }
@@ -175,12 +179,12 @@ h1, h2{
 }
 
 .about_me__1__title{
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin-top: 8rem;
 }
 
 .about_me__1__subtitle{
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1vw, 1.3rem);
     margin: 1.5rem auto;
     max-width: 800px;    
 }
@@ -189,6 +193,7 @@ h1, h2{
     max-width: 800px;
     margin: auto;
     color: gray;
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 .about_me__1__box{
@@ -202,13 +207,13 @@ h1, h2{
 }
 
 .box_1{
-    font-size: 1.7rem;
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
     font-family: 'Great Vibes', 'Arial';
 }
 
 .box_1--right{
     text-align: end;
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
     color: gray;
     font-style: italic;
 }
@@ -217,13 +222,14 @@ h1, h2{
 .about_me__2__title{
     margin-bottom: 1.3rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .about_me__2__box{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 1rem;
+    padding: 0 auto;
 }
 
 .about_me__2__box_paragraph{
@@ -254,13 +260,14 @@ h1, h2{
 
 .conteiner__title{
     padding-top: 6rem;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2vw, 2rem);
 }
 
 .conteiner__description {
     color: rgb(65, 65, 65);
     max-width: 600px;
     margin: 1rem auto;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
 
 .website_block{
@@ -277,17 +284,20 @@ h1, h2{
 }
 .website_block__title{
     padding-top: 4rem;
+    font-size: clamp(1.2rem, 2vw, 2rem);
 }
 
 .website_block__description{
     margin: 1rem 0;
     color: rgb(65,65,65);
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
 
 .list{
     margin-top: 0.8rem;
     color: rgb(65, 65, 65);
     margin-left: 2rem;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
 
 .span_conteiner{
@@ -315,7 +325,7 @@ h1, h2{
     font-weight: bold;
     color: rgb(83, 83, 206);
     margin-right: 1rem;
-    font-size: 1.1rem;
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
 }
 
 .website__button:hover{
@@ -357,17 +367,19 @@ h1, h2{
 }
 
 .my_habilities__title{
-    font-size: 2rem;
+    font-size: clamp(1.3rem, 2vw, 2rem);
     margin-bottom: 2rem;
 }
 
 .my_habilities__description{
     color: gray;
     margin-bottom: 2rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 
 .percentage__title{
     margin-bottom: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 .boxes{
@@ -429,7 +441,7 @@ h1, h2{
 }
 
 .social_media__title{
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     margin-bottom: 1rem;
     color: white;
 }
@@ -439,14 +451,20 @@ h1, h2{
     margin-bottom: 5rem;
     max-width: 600px;
     color: white;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
-
+.social_conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .media_conteiner{
     display: inline-block;
     margin-right: 4rem;
 }
 .media_conteiner__title{
     margin-bottom: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     color: white;
 }
 .media_conteiner__URL{
@@ -472,7 +490,7 @@ h1, h2{
     );
     border-radius: 1rem;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
 }
 
 .social_media__button:hover{
@@ -510,4 +528,33 @@ h1, h2{
     font-size: 0.9rem;
     text-align: center;
     padding-bottom: 3rem;
+}
+
+@media (max-width: 500px){
+    .header{
+        display: none;
+    }
+    .section1{
+        margin-top: 1rem;
+    }
+    .numbers{
+        flex-direction: column;
+    }
+    .social_media{
+        margin-bottom: 1rem;
+    }
+    .social_conteiner{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .media_conteiner{
+        border: 1px solid blue;
+        padding: 2rem;
+        border-radius: 2rem;
+        background-color: #2b3883;
+
+    }
+    .footer{
+        display: none;
+    }
 }
